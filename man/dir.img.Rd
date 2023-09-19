@@ -5,7 +5,7 @@
 \title{Concatenates a path, filename, and file extension into an output path, then opens a connection to the output path using function \code{fn}.
 Any folders in the path that do not exist are created.}
 \usage{
-dir.img(filename, fn, ext, path = ".", ..., append.date = T)
+dir.img(filename, fn, ext = "", path = ".", ..., append.date = T)
 }
 \arguments{
 \item{filename}{The output file name.}

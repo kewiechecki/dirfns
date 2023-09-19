@@ -9,7 +9,7 @@
 #' @export
 #' @examples
 #' mkdate("example","txt",path="path/to")
-mkdate <- function(filename,ext,path='.',append.date=T){
+mkdate <- function(filename,ext='',path='.',append.date=T){
   if(append.date){
     if(grepl('^[~/\\.]',path)) path <- paste(path, Sys.Date(), sep = '/')
     else path <- paste(Sys.Date(), path, sep = '/')
@@ -55,7 +55,7 @@ dir.out <- function(x,fn,filename,ext='txt',path='.',...,append.date=T){
 #' dir.img(pdf,"example","pdf",path="path/to")
 #' plot(1:5,1:5)
 #' dev.off()
-dir.img <- function(filename, fn,ext, path = '.', ...,append.date=T){
+dir.img <- function(filename, fn,ext='', path = '.', ...,append.date=T){
   filename <- mkdate(filename,ext,path,append.date)
   fn(filename, ...)
 }

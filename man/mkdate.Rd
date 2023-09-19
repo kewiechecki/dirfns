@@ -5,7 +5,7 @@
 \title{Creates a file path from a name, directory, and extension, then recursively creates each directory in the path.
 By default, the path is placed in a directory with today's date.}
 \usage{
-mkdate(filename, ext, path = ".", append.date = T)
+mkdate(filename, ext = "", path = ".", append.date = T)
 }
 \arguments{
 \item{filename}{The output file name.}
