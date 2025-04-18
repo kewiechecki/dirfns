@@ -35,12 +35,6 @@
 
           # C‑library dependencies for XML.so and DirichletMultinomial.so
           buildInputs = [
-			pkgs.bzip2
-			pkgs.curl
-            pkgs.gsl
-			pkgs.icu75
-			pkgs.libpng
-            pkgs.libxml2
           ];
 
 		  preBuild = ''
