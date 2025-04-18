@@ -37,9 +37,13 @@
           ];
 
 		  preBuild = ''
-		  make build
-		  mv build $out
+			  make build
+			  #mv build $out
 		  '';
+		  #installPhase = ''
+		  #    make install
+		  #    R CMD INSTALL --library=$out .
+		  #'';
 
           # re‑enable Nix’s R-wrapper so it injects R_LD_LIBRARY_PATH
           dontUseSetLibPath = false;
