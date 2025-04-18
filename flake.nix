@@ -27,13 +27,12 @@
               rpkgs.rtracklayer
           ];
 
-          # Make sure R is on PATH at build time, and pkg-config can see libxml2 & gsl:
           nativeBuildInputs = [
             pkgs.R
             pkgs.pkg-config
           ];
 
-          # C‑library dependencies for XML.so and DirichletMultinomial.so
+          # C‑library dependencies
           buildInputs = [
           ];
 
@@ -70,7 +69,6 @@ source ${pkgs.git}/share/bash-completion/completions/git-prompt.sh
             '';
           };
         };
-      }
-    );
+      });
 }
 
